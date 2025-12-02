@@ -47,14 +47,14 @@ totalGallons2 = totalMiles / mpg2;
 totalGallons3 = totalMiles / mpg3;
 
 //Total fuel cost gallons used * cost per gallon
-const totalCost1 = (totalGallons1) * fuelCost;
-const totalCost2 = (totalGallons2) * fuelCost;
-const totalCost3 = (totalGallons3) * fuelCost;
+const totalCost1 = parseFloat((totalGallons1) * fuelCost).toFixed(2);
+const totalCost2 = parseFloat((totalGallons2) * fuelCost).toFixed(2);
+const totalCost3 = parseFloat((totalGallons3) * fuelCost).toFixed(2);
 
 //Total time for each speed
-const time1 = fuelBudget / speed1;
-const time2 = fuelBudget / speed2;
-const time3 = fuelBudget / speed3;
+const time1 = parseFloat(fuelBudget / speed1).toFixed(2);
+const time2 = parseFloat(fuelBudget / speed2).toFixed(2);
+const time3 = parseFloat(fuelBudget / speed3).toFixed(2);
 
 const travelSpeeds = [speed1,speed2,speed3];
 const totalGallons = [totalCost1,totalCost2,totalCost3];
